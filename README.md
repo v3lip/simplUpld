@@ -84,6 +84,12 @@ npm start
 
 The application will be available at `http://localhost:3000`
 
+3. Create admin account:
+```
+Register a new user called 'admin' or what ever you have as admin account in your .env file
+Admin accounts have an admin panel to manage other accounts. 
+```
+
 ## API Documentation
 
 ### Authentication
