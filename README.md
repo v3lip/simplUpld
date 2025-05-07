@@ -1,4 +1,4 @@
-# Secure File Upload System
+# SIMPLUPLD
 
 A robust, secure, and user-friendly file upload system with chunk-based uploads, user management, and sharing capabilities. With **some** bugs/features.
 
@@ -39,8 +39,8 @@ A robust, secure, and user-friendly file upload system with chunk-based uploads,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/secure-file-upload.git
-cd secure-file-upload
+git clone https://github.com/v3lip/simplUpld.git
+cd simplUpld
 ```
 
 2. Install backend dependencies:
