@@ -3,6 +3,7 @@
 A robust, secure, and user-friendly file upload system with chunk-based uploads, user management, and sharing capabilities. With **some** bugs/features.
 
 ## Features
+![image](https://github.com/user-attachments/assets/b91be271-f2e7-4f9b-bf99-4c91e9447bd7)
 
 ### Core Features
 - **Chunk-Based Uploads**: Support for large file uploads with automatic chunking and resumable uploads
