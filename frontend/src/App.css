@@ -1,0 +1,1023 @@
+.App {
+  text-align: center;
+  max-width: 900px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Discord-like Theme Styles */
+.App {
+  margin: 50px auto;
+  text-align: left;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #2f3136;
+  color: #dcddde;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.App h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  background-color: #36393f;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  position: relative;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.upload-section.drag-over {
+  background-color: rgba(114, 137, 218, 0.2);
+  border: 2px dashed #7289da;
+}
+
+.upload-section input[type="file"] {
+  color: #dcddde;
+}
+
+.upload-section button {
+  margin-left: auto;
+  padding: 8px 16px;
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.upload-section button:hover {
+  background-color: #5b6eae;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.file-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #36393f;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.file-list li button {
+  padding: 4px 12px;
+  background-color: #7289da;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.file-list li button:hover {
+  background-color: #5b6eae;
+}
+
+/* Header Styles */
+.header {
+  background-color: #202225;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  margin-left: 10px;
+  background-color: #f04747;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d43c3c;
+}
+
+/* Login form */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #2f3136;
+  padding: 30px;
+  border-radius: 8px;
+  color: #dcddde;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.login-button {
+  padding: 8px 16px;
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #5b6eae;
+}
+
+/* Custom file input */
+.custom-file-upload {
+  flex: 1;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+  cursor: pointer;
+  background: transparent;
+  color: #dcddde;
+  border: 2px dashed #7289da;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+}
+
+.custom-file-upload:hover {
+  background-color: #5b6eae;
+}
+
+#file-upload {
+  display: none;
+}
+
+/* Global background for the app */
+body, html, #root {
+  background-color: #202225;
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Layout for login/register buttons */
+.login-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Style for register button */
+.register-button {
+  padding: 8px 16px;
+  background-color: #43b581;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #389d6e;
+}
+
+.session-timer {
+  background-color: #f04747;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.captcha-question {
+  color: #fff;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.login-container input[type="text"]:last-of-type {
+  margin-bottom: 15px;
+}
+
+/* progress bar positioning */
+.upload-progress {
+  position: absolute;
+  bottom: -25px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* style the native progress element */
+.upload-progress progress {
+  flex: 1;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #72767d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* WebKit progress styling */
+.upload-progress progress::-webkit-progress-bar {
+  background-color: #72767d;
+}
+.upload-progress progress::-webkit-progress-value {
+  background-color: #7289da;
+  border-radius: 3px;
+}
+
+/* Mozilla progress styling */
+.upload-progress progress::-moz-progress-bar {
+  background-color: #7289da;
+}
+
+.upload-progress span {
+  color: #fff;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* File table styles */
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.file-table th,
+.file-table td {
+  padding: 10px;
+  text-align: left;
+}
+.file-table th {
+  color: #b9bbbe;
+  font-weight: 600;
+  border-bottom: 2px solid #72767d;
+}
+.file-table td {
+  border-bottom: 1px solid #72767d;
+}
+.file-table .action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.file-table .download-button,
+.file-table .delete-button {
+  margin-right: 8px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.file-table .download-button {
+  background-color: #43b581;
+  color: #fff;
+}
+.file-table .download-button:hover {
+  background-color: #3aa46a;
+}
+.file-table .delete-button {
+  background-color: #f04747;
+  color: #fff;
+}
+.file-table .delete-button:hover {
+  background-color: #d43c3c;
+}
+
+/* Session duration dropdown styling */
+.login-container select {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #202225;
+  color: #dcddde;
+}
+.login-container select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #7289da;
+}
+
+/* Modern hover and animation effects */
+.file-table tr {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.file-table tr:hover {
+  background-color: #424549;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.file-table .download-button,
+.file-table .delete-button {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.file-table .download-button:hover,
+.file-table .delete-button:hover {
+  transform: scale(1.05);
+}
+
+/* Animate progress bar fill */
+.upload-progress progress::-webkit-progress-value {
+  transition: width 0.3s ease;
+}
+.upload-progress progress::-moz-progress-bar {
+  transition: width 0.3s ease;
+}
+
+/* Button hover effects */
+.upload-section button,
+.login-button,
+.register-button,
+.logout-button {
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+.upload-section button:hover,
+.login-button:hover,
+.register-button:hover,
+.logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Captcha fade-in */
+.captcha-question {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px);} 
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* File search control */
+.file-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.file-controls input {
+  padding: 6px 12px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  background-color: #202225;
+  color: #dcddde;
+}
+.file-controls input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #7289da;
+}
+
+/* Make table headers interactive */
+.file-table th {
+  cursor: pointer;
+  user-select: none;
+}
+.file-table th:hover {
+  color: #fff;
+}
+
+/* Bulk actions styling */
+.bulk-delete-button,
+.bulk-download-button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #f04747;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+.bulk-delete-button {
+  background-color: #f04747;
+}
+.bulk-download-button {
+  background-color: #43b581;
+}
+.bulk-delete-button:hover,
+.bulk-download-button:hover {
+  background-color: #d43c3c;
+}
+
+/* Checkbox column styling */
+.file-table th:first-child,
+.file-table td:first-child {
+  width: 40px;
+  text-align: center;
+}
+
+/* Preview modal */
+.preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.preview-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preview-content img,
+.preview-content video,
+.preview-content object {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Thumbnail in table */
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.pdf-icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.file-name-cell-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Share button */
+.file-table .share-button {
+  background-color: #f1c40f;
+  color: #000;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.file-table .share-button:hover {
+  background-color: #d4ac0d;
+}
+
+/* Share modal enhancements */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+.modal-content {
+  position: relative;
+  background: #36393f;
+  color: #dcddde;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid #40444b;
+}
+.modal-content h3 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+.modal-body label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  color: #b9bbbe;
+}
+.modal-body input {
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #202225;
+  color: #dcddde;
+  border: 1px solid #72767d;
+  border-radius: 4px;
+  width: 100%;
+}
+.modal-body input[readonly] {
+  background-color: #40444b;
+  cursor: text;
+}
+.modal-error {
+  color: #ff5555;
+  font-size: 0.8em;
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.modal-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.primary-share-button {
+  background-color: #7289da;
+  color: #fff;
+}
+.primary-share-button:hover {
+  background-color: #5b6eae;
+}
+.secondary-share-button {
+  background-color: #40444b;
+  color: #dcddde;
+}
+.secondary-share-button:hover {
+  background-color: #36393f;
+}
+
+/* Slider for share expiry */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+.slider-wrapper input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #72767d;
+  outline: none;
+  cursor: pointer;
+}
+.slider-wrapper input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7289da;
+  cursor: pointer;
+  border: none;
+}
+.slider-wrapper input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7289da;
+  cursor: pointer;
+  border: none;
+}
+.slider-value {
+  min-width: 3em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Read-only link input styling */
+.modal-body input[readonly] {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #40444b;
+  color: #dcddde;
+  border: 1px solid #72767d;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Rename button */
+.file-table .rename-button {
+  background-color: #43b581;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.file-table .rename-button:hover {
+  background-color: #3aa46a;
+}
+
+/* Dropdown actions menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  background: transparent;
+  border: none;
+  color: #dcddde;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px;
+}
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #36393f;
+  border: 1px solid #72767d;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  list-style: none;
+  margin: 4px 0;
+  padding: 4px 0;
+  min-width: 120px;
+  z-index: 1002;
+}
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #dcddde;
+  white-space: nowrap;
+}
+.dropdown-menu li:hover {
+  background-color: #424549;
+}
+
+/* Disable row lift when dropdown open */
+.dropdown-open .file-table tr:hover {
+  transform: none !important;
+}
+
+/* Settings button */
+.settings-button {
+  background: transparent;
+  border: none;
+  color: #dcddde;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.settings-button:hover {
+  color: #fff;
+}
+
+/* Settings modal section styling */
+.modal-body section {
+  border-bottom: 1px solid #72767d;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.modal-body section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.modal-body section h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.modal-body section h4 + p,
+.modal-body section h4 + div {
+  margin-top: 5px;
+}
+
+/* Theme all modal action buttons */
+.modal-content .modal-actions button {
+  background-color: #40444b;
+  color: #dcddde;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-content .modal-actions button:hover {
+  background-color: #36393f;
+}
+
+/* Dark-style inputs in settings modal */
+.modal-content .modal-body section input {
+  background-color: #202225;
+  color: #dcddde;
+  border: 1px solid #72767d;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 8px 0;
+  width: 100%;
+  display: block;
+}
+
+/* Settings modal section buttons */
+.modal-content .modal-body section button {
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+  width: 100%;
+  display: block;
+}
+
+/* Center and size inputs, buttons, and slider in settings modal */
+.modal-content .modal-body section > input,
+.modal-content .modal-body section > button,
+.modal-content .modal-body section .slider-wrapper {
+  align-self: center;
+  width: 80%;
+  max-width: 300px;
+  margin: 8px 0;
+}
+
+/* Success toast in settings modal */
+.modal-success {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #43b581;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  z-index: 1003;
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* Activity button */
+.activity-button {
+  background: transparent;
+  border: none;
+  color: #dcddde;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.activity-button:hover {
+  color: #fff;
+}
+
+/* Activity table styling */
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+.activity-table th,
+.activity-table td {
+  padding: 8px 12px;
+  text-align: left;
+}
+.activity-table th {
+  background-color: #40444b;
+  color: #fff;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+.activity-table tr:nth-child(even) {
+  background-color: #2f3136;
+}
+.activity-table tr:hover {
+  background-color: #424549;
+}
+/* Color actions */
+.action-upload { color: #43b581; }
+.action-download { color: #7289da; }
+.action-delete { color: #f04747; }
+
+/* Activity Log modal scrollable body */
+.activity-modal .modal-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Admin button */
+.admin-button {
+  background: transparent;
+  border: none;
+  color: #dcddde;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.admin-button:hover {
+  color: #fff;
+}
+
+/* Admin modal enhancements */
+.admin-modal .modal-content {
+  max-width: 700px;
+  width: 90%;
+  padding: 20px;
+}
+.admin-modal h3 {
+  margin: 0 0 15px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+/* Admin controls layout */
+.admin-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.admin-controls input {
+  flex: 1;
+  padding: 8px 12px;
+  background-color: #202225;
+  border: 1px solid #72767d;
+  border-radius: 4px;
+  color: #dcddde;
+}
+.admin-controls input::placeholder {
+  color: #72767d;
+}
+
+/* Admin table wrapper for horizontal scroll */
+.admin-modal .modal-body {
+  max-height: 350px;
+  overflow-y: auto;
+}
+.admin-modal .modal-body {
+  padding: 0;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2f3136;
+}
+.admin-table th,
+.admin-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #40444b;
+}
+.admin-table th {
+  background-color: #40444b;
+  color: #fff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.admin-table tr:nth-child(even) {
+  background-color: #36393f;
+}
+.admin-table tr:hover {
+  background-color: #4f545c;
+}
+
+/* Action buttons in admin table */
+.admin-table button {
+  padding: 4px 8px;
+  margin-right: 6px;
+  font-size: 0.85em;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.admin-table button:first-child {
+  background-color: #43b581;
+}
+.admin-table button:first-child:hover {
+  background-color: #3aa46a;
+}
+.admin-table button:last-child {
+  background-color: #f04747;
+}
+.admin-table button:last-child:hover {
+  background-color: #d43c3c;
+}
+
+/* Modal overlay tweaks for admin */
+.admin-modal + .modal-overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+/* Video preview styles */
+.preview-video {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  background: #000;
+  border-radius: 4px;
+}
+
+.thumbnail.video {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #000;
+}
