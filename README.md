@@ -8,6 +8,7 @@ A robust, secure, and user-friendly file upload system with chunk-based uploads,
 ### Core Features
 - **Chunk-Based Uploads**: Support for large file uploads with automatic chunking and resumable uploads
 - **User Management**: Secure user registration and authentication system
+- **User Expire**: When non-admin accounts register their account they have a limited time before the account gets deleted with all their files. Users are free to add up to 24 hours in their settings panel.
 - **File Management**: Upload, download, rename, and delete files
 - **File Preview**: Includes a video and image in-built preview feature.
 - **Sharing System**: Create password-protected shareable links with expiration
