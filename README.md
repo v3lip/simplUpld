@@ -1,6 +1,6 @@
 # Secure File Upload System
 
-A robust, secure, and user-friendly file upload system with chunk-based uploads, user management, and sharing capabilities.
+A robust, secure, and user-friendly file upload system with chunk-based uploads, user management, and sharing capabilities. With **some** bugs/features.
 
 ## Features
 
